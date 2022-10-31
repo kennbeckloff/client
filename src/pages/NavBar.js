@@ -15,7 +15,7 @@ function NavBar({ user, setUser }) {
   return (
     <Wrapper>
       <Logo>
-        <Link to="/">App test</Link>
+        <Link to="/">Project_Tracking</Link>
       </Logo>
       <Nav>
         <Button variant="outline" onClick={handleLogoutClick}>

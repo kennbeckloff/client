@@ -8,9 +8,11 @@ function Login({ onLogin }) {
   const [showLogin, setShowLogin] = useState(true);
 
   return (
+    <div>
+<h1>Project_Tracking</h1>
     <Wrapper>
-      <Logo>Reciplease</Logo>
-      {showLogin ? (
+      <Logo></Logo>
+            {showLogin ? (
         <>
           <LoginForm onLogin={onLogin} />
           <Divider />
@@ -34,17 +36,20 @@ function Login({ onLogin }) {
         </>
       )}
     </Wrapper>
+    </div>
   );
 }
 
 const Logo = styled.h1`
-  font-family: "Permanent Marker", cursive;
-  font-size: 3rem;
-  color: deeppink;
+  font-size: 4rem;
+  color: gray;
   margin: 8px 0 16px;
 `;
 
 const Wrapper = styled.section`
+//aligh to the right side
+  width: 100%;
+  
   max-width: 500px;
   margin: 40px auto;
   padding: 16px;
